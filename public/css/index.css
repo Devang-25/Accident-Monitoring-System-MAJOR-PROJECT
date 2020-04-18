@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima nova', 'open sans','roboto';
+}
+body{
+	background: #e2f2fc40;
+	z-index: 1;
+}
+img{
+	text-align: center;
+	transform: translateX(calc(50vw - 10vw));
+	width: 20vw;
+	margin: 20px auto;
+}
+
+.accident-alert{
+	background: #1488CC10;
+	width: 80vw;
+	margin: 60px auto;
+}
+.one{
+	z-index: 10;
+	animation: scaledown 14s;
+}
+.oneh2{
+	animation: headingColorChange 14s;
+}
+.accident-alert h2{
+	text-align: center;
+	font-size : 3.5vw;
+	color: #fff;
+	background: #1488CC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 10px 0;
+	font-weight: 300;
+}
+
+.accident-alert h2 span{
+	font-weight: 300;
+	font-size: 3vw;
+	font-style: italic;
+}
+.alert-details {
+	padding: 25px;
+	font-size: 20px;
+	font-weight: 300;
+}
+.alert-details h5{
+	font-size: 30px;
+	font-style: none;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
+.alert-details p{
+	padding: 5px 0;
+}
+@-webkit-keyframes scaledown {
+    0% {transform: scale(1.2);background: #cc141410;}
+	 80% {transform: scale(1.2);background: #cc141410;}
+    100% {transform: scale(1);background: #1488CC10;}
+}
+
+@keyframes headingColorChange {
+		0%{background: linear-gradient(to right, #d31027, #ea384d);}
+		80%{background: linear-gradient(to right, #d31027, #ea384d);}
+		100%{background: linear-gradient(to right, #2B32B2, #1488CC);}
+}
